@@ -1,7 +1,10 @@
 name: Update stuff
 on:
-  schedule:
-  - cron: '40 9 * * 1-5' # Every Weekday at 6:45 UTC
+  push:
+    branches:
+    - master
+    tags:
+    - '*'
 
 jobs:
   update_stuff:
