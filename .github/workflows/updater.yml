@@ -1,0 +1,17 @@
+name: Update stuff
+on:
+  schedule:
+  - cron: '40 9 * * 1-5' # Every Weekday at 6:45 UTC
+
+jobs:
+  update_stuff:
+    runs-on: ubuntu-20.04
+    name: Automatically reorder issues by priority in "Backlog" column of "Production" and "Loop" projects
+    steps:
+      - uses: alwx/dependabot-batch-updater@master
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          repository: alwx/rasa
+          directory: /
+          package-manager: pip
+          batch-size: 3
