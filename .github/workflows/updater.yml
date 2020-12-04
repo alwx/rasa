@@ -13,8 +13,9 @@ jobs:
     steps:
       - uses: alwx/dependabot-batch-updater@main
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          username: alwx 
+          token: ${{ secrets.GH_ACCESS_TOKEN }}
           repository: alwx/rasa
           directory: /
           package-manager: pip
-          batch-size: 2
+          batch-size: 3
