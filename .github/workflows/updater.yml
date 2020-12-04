@@ -9,7 +9,7 @@ on:
 jobs:
   update_stuff:
     runs-on: ubuntu-20.04
-    name: Automatically reorder issues by priority in "Backlog" column of "Production" and "Loop" projects
+    name: Update multiple dependencies
     steps:
       - uses: alwx/dependabot-batch-updater@main
         with:
@@ -17,4 +17,4 @@ jobs:
           repository: alwx/rasa
           directory: /
           package-manager: pip
-          batch-size: 3
+          batch-size: 2
