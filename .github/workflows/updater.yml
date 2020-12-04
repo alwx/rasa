@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: alwx/dependabot-batch-updater@main
         with:
-          username: ""
+          username: alwx
           token: ${{ secrets.GITHUB_TOKEN }}
           repository: alwx/rasa
           directory: /
