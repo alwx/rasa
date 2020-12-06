@@ -18,4 +18,4 @@ jobs:
           repository: alwx/rasa
           directory: /
           package-manager: pip
-          batch-size: 3
+          batch-size: 5
