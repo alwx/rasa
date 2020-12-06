@@ -14,7 +14,7 @@ jobs:
       - uses: alwx/dependabot-batch-updater@main
         with:
           username: alwx
-          token: ${{ secrets.WORKFLOWSECRET }}
+          repo-token: ${{ secrets.WORKFLOWSECRET }}
           repository: alwx/rasa
           directory: /
           package-manager: pip
