@@ -12,6 +12,7 @@ updates:
   - alwx
   labels:
   - type:dependencies
+  - type:kek
   ignore:
   - dependency-name: prompt-toolkit
     versions:
@@ -20,6 +21,4 @@ updates:
     versions:
     - "> 0.10.0"
   - dependency-name: boto3
-    versions:
-    - "> 1.12"
   - dependency-name: tqdm
