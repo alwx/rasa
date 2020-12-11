@@ -15,7 +15,7 @@ jobs:
         with:
           username: ""
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-          repository: alwx/rasa
+          repository: rasaHQ/rasa
           directory: /
           package-manager: pip
           batch-size: 5
